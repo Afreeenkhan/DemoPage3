@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding: 0;
+   margin: 0;
+   font-family: "Rubik", sans-serif;
+}
+
+body, html{
+    min-height: 100%;
+    width: 100%;
+    background-color: #efeae3;
+}
+.nav{
+    /* background-color: rgb(150, 209, 32); */
+    /* position: relative;  */
+    height: 10vh;
+    width: 99vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+margin-top: 4vh;
+
+}
+
+.nav>img{
+    padding: 30px 40px;
+    margin: 2%;
+}
+
+.menu{
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    margin-right: 4vh;
+}
+
+
+/* .menu a{
+    text-decoration: none ;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid rgba(96, 87, 87, 0.909);
+    margin: 3vh;
+    padding: 2.2vh;
+    border-radius: 35px;
+     position: relative; 
+   }  */
+
+   .menu h3 a{
+    text-decoration: none ; 
+    color: white;
+   
+    
+   }
+   .menu h3 a{
+    text-decoration: none ; 
+   color: #000000bb;
+   z-index: 9;
+   position: relative;
+   }
+
+   .menu h3:hover a{
+    color: white;
+   }
+   .menu h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    border: 1px solid rgba(96, 87, 87, 0.909);
+    margin: 3vh;
+    padding: 2.2vh;
+    border-radius: 35px;
+    position: relative;
+    overflow: hidden;
+   }
+.menu h3::after{
+    content: "";
+   background-color: black;
+   
+    /* border-radius: 35px; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+    transition: all ease 0.3s;
+}
+
+.menu h3:hover::after{
+    bottom: 0;
+    border-radius: 35px;
+    background-color: black;
+    transition: all ease 0.3s;
+}
+.content{
+    height: 80vh;
+    width: 98vw;
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    /* background-color: red; */
+}
+
+
+.part1 h3{
+    height: 100%;
+    width: 60%;
+   font-size: 25px;
+  margin-left: 5vh;
+  text-align: left;
+
+}
+
+.part2 h1{
+    height: 100%;
+    width: 90%;
+   font-size: 128px;
+   text-align: right;
+    line-height: 19vh;
+}
+
+.vid{
+    /* position: relative; */
+    /* background-color: black; */
+    width: 100%;
+    height: 100%;
+   }
+video{
+    /* position: absolute; */
+    width: 95%;
+    height: 50%;
+    border-radius: 10vh;
+    margin: 2vh;
+    padding: 2vh;
+}
+
+marquee{
+    font-size: 20vh;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 2px 3px bisque;
+}
+
+marquee img{
+   height: 10vh;
+   width: 5vw;
+   border-radius: 50%;
+}
+
+.cards{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card1 h1{
+    /* height: 100%;
+    width: 20%; */
+    /* margin-left: vh; */
+    font-size: 10vh;
+
+} 
+
+.cards .card1{
+    height: 100%;
+    width: 70%;
+    margin-left: 4vh; 
+    padding: 4vh;
+    margin: 7vh;
+} 
+
+.cards .card2{
+    height: 100%;
+    width: 30%;
+    margin: 5vh;
+} 
+
+.cards .card2 img{
+    height: 80%;
+    width: 70%;
+    object-fit: contain;
+    margin-left: 4vh;
+    margin-bottom: 4vh;
+    border-radius: 10px;
+} 
+
+.cards .card2 h3{
+    font-size: 2.5vh;
+    font-weight: 400;
+}
